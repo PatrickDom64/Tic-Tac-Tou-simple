@@ -1,0 +1,102 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#coteiner{
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px  0px 12px 2px black;
+}
+
+h1{
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+}
+
+span{
+    position: absolute;
+    font: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+}
+
+.top{
+    border-top: none;   
+}
+
+.bottom{
+    border-bottom: none;
+}
+.right{
+    border-right: none;
+}
+.left{
+    border-left: none;
+}
+.alert{
+    height: 75px;
+    width: 125px;
+    background: whitesmoke;
+    position: absolute;
+    z-index: 100;
+    margin-top: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px rgb(87, 82, 82);
+    animation: linear 0.5;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 20px;
+    bottom: 50px;
+    top: 0;
+}
+
+button{
+    background: gray;
+    border-radius: 18px;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+button:focus{
+    background: rgb(230, 73, 73);
+}
+.activeBox{
+    background: rgb(221, 139, 139);
+}
+@keyframes larger {
+    from {
+        height: 75px;
+        width: 125px;
+    }
+    to {
+        height: 100px;
+        width: 250px;
+    }    
+}
